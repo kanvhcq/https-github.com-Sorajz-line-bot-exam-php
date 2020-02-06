@@ -54,10 +54,10 @@
         $arrayPostData['messages'][1]['stickerId'] = "131";
         replyMsg($arrayHeader,$arrayPostData);
     }
-else if($message == "web"){
+else if($message == "ทำไร"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "webไร";
+        $arrayPostData['messages'][0]['text'] = "ยุง";
         replyMsg($arrayHeader,$arrayPostData);
 }
 
