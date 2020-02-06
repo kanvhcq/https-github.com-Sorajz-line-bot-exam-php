@@ -54,6 +54,14 @@
         $arrayPostData['messages'][1]['stickerId'] = "131";
         replyMsg($arrayHeader,$arrayPostData);
     }
+else if($message == "web"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $image_url = "https://www.google.com/";
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "";
+        replyMsg($arrayHeader,$arrayPostData);
+}
+
 function replyMsg($arrayHeader,$arrayPostData){
         $strUrl = "https://api.line.me/v2/bot/message/reply";
         $ch = curl_init();
