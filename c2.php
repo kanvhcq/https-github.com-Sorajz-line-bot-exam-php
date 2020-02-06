@@ -56,9 +56,8 @@
     }
 else if($message == "web"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
-        $image_url = "https://www.google.com/";
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "";
+        $arrayPostData['messages'][0]['text'] = "webไร";
         replyMsg($arrayHeader,$arrayPostData);
 }
 
